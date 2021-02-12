@@ -49,15 +49,5 @@ DeviceIsConnected() {
 
 CheckInputs(aInputs) {
     for monitorName,inputNumber in aInputs 
-        if(GetCurrentInput(monitorName) <> inputNumber)
-            SwitchInput(monitorName, inputNumber)
-}
-
-GetCurrentInput(monitorName) {
-    RunWait, ControlMyMonitor/ControlMyMonitor.exe /GetValue %monitorName% 60
-    return %ErrorLevel%
-}
-
-SwitchInput(monitorName, inputNumber) {
-    Run, ControlMyMonitor/ControlMyMonitor.exe /SetValueIfNeeded %monitorName% 60 %inputNumber%
+        Run, ControlMyMonitor/ControlMyMonitor.exe /SetValueIfNeeded %monitorName% 60 %inputNumber%
 }
