@@ -34,9 +34,9 @@ RunCheck() {
     else if (A_ComputerName = PC1_NAME and DeviceIsConnected() = false)
         CheckInputs(PC2_INPUTS)
     else if (A_ComputerName = PC2_NAME and DeviceIsConnected() = true)
-        CheckInputs(PC1_INPUTS)
-    else if (A_ComputerName = PC2_NAME and DeviceIsConnected() = false)
         CheckInputs(PC2_INPUTS)
+    else if (A_ComputerName = PC2_NAME and DeviceIsConnected() = false)
+        CheckInputs(PC1_INPUTS)
 }
 
 DeviceIsConnected() {
