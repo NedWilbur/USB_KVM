@@ -24,9 +24,6 @@ global PC2_INPUTS := { (MONITOR1_NAME) : "16", (MONITOR2_NAME) : "17", (MONITOR3
 ; MISC
 CHECK_ON_INTERVAL := true
 CHECK_INTERVAL_MS := 5000
-
-;MANUALLY RUN CHECK VIA HOTKEY (comment to disable)
-; !^k::RunCheck()
 ;------------------------------------------------------------------------------------------------------------------------------
 if (CHECK_ON_INTERVAL)
     SetTimer, RunCheck, %CHECK_INTERVAL_MS%
