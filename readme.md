@@ -1,5 +1,5 @@
 # USB_KVM
-This is a AutoHotKey (AHK) script that will allow you to use a basic USB switch as a full automatic monitor switch.
+This is a AutoHotKey (AHK) script that turns any basic USB switch into a full USB and Video KVM switch (minus the hot-key switching).
 
 This script heavily utilizes [ControlMyMonitor](https://www.nirsoft.net/utils/control_my_monitor.html) to switch the inputs programmatically. This script simply adds logic around it.
 
