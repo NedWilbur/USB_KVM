@@ -1,3 +1,5 @@
+# WARNING - Works, but not that well. 
+
 # USB_KVM
 This is a AutoHotKey (AHK) script that turns any basic USB switch into a full USB and Video KVM switch (minus the hot-key switching).
 
